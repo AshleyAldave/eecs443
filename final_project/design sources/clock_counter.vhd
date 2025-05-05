@@ -56,8 +56,10 @@ end process;
     if reset = '1' then 
         am_pm_reg <= '0';
     elsif (rising_edge(clk1)) then 
-        if (digit1 = "0001") and (digit2 = "0001") and (digit3 = "0101") and (digit4 = "1001") then 
+        if (digit6 = "0001") and (digit5 = "0010") and (digit4 = "0000") and (digit3 = "0000") and (digit2 = "0000") and (digit1 = "0000") then 
             am_pm_reg <= not am_pm_reg;
+        elsif (digit6 = "0000") and (digit5 = "0000") and (digit4 = "0000") and (digit3 = "0000") and (digit2 = "0000") and (digit1 = "0000") then
+            am_pm_reg <= '0'; 
         end if;
      end if;
  end process;
