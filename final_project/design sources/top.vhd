@@ -63,14 +63,19 @@ signal digit1,digit2,digit3,digit4,digit5,digit6:  std_logic_vector   (3 downto 
 begin
 
 comp1:clk_1hz PORT MAP(
-clk, clk1
+clk => clk,
+clk1 => clk1
 );
 
 comp2: clk_1khz PORT MAP(
-clk, clk2);
+clk => clk, 
+clk2 => clk2
+);
 
 comp3: mod6counter  PORT MAP(
-clk2, WhichDisplay );
+clk2 => clk2, 
+WhichDisplay => WhichDisplay 
+);
 
 comp4: clock_counter PORT MAP(
 clk1 => clk1,
@@ -90,7 +95,9 @@ am_pm => am_pm
 );
 
 comp5: anode_picker PORT MAP(
-WhichDisplay , anode);
+WhichDisplay => WhichDisplay, 
+anode => anode
+);
 
 comp6: decoder PORT MAP(
 digit1 => digit1, 
