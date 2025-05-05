@@ -19,7 +19,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {segments[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {segments[0]}]
 set_property PACKAGE_PIN E3 [get_ports clk]
 #set_property PACKAGE_PIN J15 [get_ports reset]
-set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { reset }]; #IO_L9P_T1_DQS_14 Sch=btnc
+set_property PACKAGE_PIN N17 [get_ports  reset ]
 set_property PACKAGE_PIN H15 [get_ports {segments[7]}]
 set_property PACKAGE_PIN L18 [get_ports {segments[6]}]
 set_property PACKAGE_PIN T11 [get_ports {segments[5]}]
