@@ -49,7 +49,7 @@ end component;
 
 component decoder
 port ( WhichDisplay: in std_logic_vector (2 downto 0);
-digit1,digit2,digit3,digit4,digit5,digit6: in std_logic_vector   (3 downto 0);
+digit1,digit2,digit3,digit4,digit5,digit6, digit7 : in std_logic_vector   (3 downto 0);
 am_pm: in std_logic;
 segments: out std_logic_vector (7 downto 0));
 end component;
@@ -58,7 +58,7 @@ signal 	clk1 : std_logic :='0';
 signal clk2: std_logic :='0';
 signal 	am_pm : std_logic;
 signal WhichDisplay: std_logic_vector (2 downto 0);
-signal digit1,digit2,digit3,digit4,digit5,digit6:  std_logic_vector   (3 downto 0);
+signal digit1,digit2,digit3,digit4,digit5,digit6, digit7:  std_logic_vector   (3 downto 0);
 
 begin
 
@@ -106,6 +106,7 @@ digit3 => digit3,
 digit4 => digit4,
 digit5 => digit5,
 digit6 => digit6,
+digit7 => digit7,
 am_pm => am_pm,
 WhichDisplay => WhichDisplay,
 segments => segments     
