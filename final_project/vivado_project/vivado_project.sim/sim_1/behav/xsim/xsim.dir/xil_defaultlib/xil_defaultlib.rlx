@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/a993a775/Desktop/final_project/design sources/anode_picker.vhd,1746403231,vhdl,,,,anode_picker,,,,,,,,
+C:/Users/a993a775/Desktop/final_project/design sources/clk_1hz.vhd,1746403231,vhdl,,,,clk_1hz,,,,,,,,
+C:/Users/a993a775/Desktop/final_project/design sources/clk_1khz.vhd,1746403231,vhdl,,,,clk_1khz,,,,,,,,
+C:/Users/a993a775/Desktop/final_project/design sources/clock_counter.vhd,1746482650,vhdl,,,,clock_counter,,,,,,,,
+C:/Users/a993a775/Desktop/final_project/design sources/decoder.vhd,1746566530,vhdl,,,,decoder,,,,,,,,
+C:/Users/a993a775/Desktop/final_project/design sources/mod6counter.vhd,1746403232,vhdl,,,,mod6counter,,,,,,,,
+C:/Users/a993a775/Desktop/final_project/design sources/top.vhd,1746566960,vhdl,C:/Users/a993a775/Desktop/final_project/simulation sources/counter_tb.vhd,,,counter,,,,,,,,
+C:/Users/a993a775/Desktop/final_project/simulation sources/counter_tb.vhd,1746566050,vhdl,,,,counter_tb,,,,,,,,
