@@ -29,20 +29,22 @@ begin
 
 process (clk1, reset, minuteadder, houradder, seconds)
 begin
-if (reset='1' OR seconds=86400) then
-seconds<=0;
+if (reset='1' OR seconds>=86400) then
+    seconds<=0;
 elsif rising_edge(clk1) then
- seconds<=seconds+1;
-IF minuteadder(0) ='1' then
- seconds<=seconds+60;
- elsif minuteadder(1) ='1' then
- seconds<=seconds+600;
- elsif houradder(0) ='1' THEN
- seconds<=seconds+3600;
- elsif houradder(1)='1' then
- seconds<=seconds+36000;
- end if;
- end if;
+    if (seconds < 86400) then 
+        seconds<=seconds+1;
+        if minuteadder(0) ='1' then
+            seconds<=seconds+60;
+        elsif minuteadder(1) ='1' then
+            seconds<=seconds+600;
+        elsif houradder(0) ='1' then
+            seconds <= seconds+3600;
+        elsif houradder(1)='1' then
+            seconds<=seconds+36000;
+        end if;
+    end if;
+end if;
 end process;
  digit1<=int_bin (((seconds mod 3600) mod 60) mod 10);
  digit2<=int_bin (((seconds mod 3600) mod 60 ) /10);
